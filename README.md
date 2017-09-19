@@ -45,6 +45,8 @@ conda install -c anaconda scrapy
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 - pymongo
 ```
+conda install -c anaconda pymongo
+```
 
 
 Primeiro passo é clonar o projeto do GitHub (git clone https://github.com/Augusto94/TestePratico_Intelivix_Scraping.git)\
