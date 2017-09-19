@@ -64,7 +64,7 @@ scrapy crawl kabum
 ```
 4. Aguarde a execução do crawler (Isso pode levar um tempo ;) )
 5. Ao término da execução da spider consultas no banco de dados já podem ser relizadas. 
-6. Abra uma IDLE do python para realizar consultas (Terminal, Jupyter Notebook, ect).
+6. Abra uma IDLE do python para realizar consultas (Terminal, Jupyter Notebook, etc).
 7. Segue o exemplo de uma consulta:
 ```
 import pymongo
