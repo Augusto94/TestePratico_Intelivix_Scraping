@@ -35,10 +35,17 @@ Levando em conta os itens citados acima bem como o tempo para revisar o uso das 
 ## Instruções para execução do projeto
 
 É necessário ter instalado:
-- Python 3
+- Python 3 (Instalação pode ser feita via Anaconda para facilitar)
+https://docs.anaconda.com/anaconda/install
 - Scrapy
+```
+conda install -c anaconda scrapy 
+```
+- MongoDB (Pode ser realiza a instalaço seguindo o tutorial que se encontra no link)
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 - pymongo
-- MongoDB
+```
+
 
 Primeiro passo é clonar o projeto do GitHub (git clone https://github.com/Augusto94/TestePratico_Intelivix_Scraping.git)\
 Segundo é iniciar o serviço no MongoDB localmente através do comando ($ sudo service mongod start)\
