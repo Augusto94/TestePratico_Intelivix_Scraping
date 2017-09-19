@@ -7,7 +7,7 @@ class TestepraticoPipeline(object):
 
 class MongoPipeline(object):
 
-    collection_name = 'test2'
+    collection_name = 'products_kabum'
 
     def __init__(self, mongo_uri, mongo_db):
         self.mongo_uri = mongo_uri
