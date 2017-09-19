@@ -35,7 +35,7 @@ Levando em conta os itens citados acima bem como o tempo para revisar o uso das 
 ## Instruções para execução do projeto
 
 É necessário ter instalado:
-- Python 3 (Instalação pode ser feita via Anaconda para facilitar)
+- Python 3 (Instalação pode ser feita via Anaconda para facilitar)\
 https://docs.anaconda.com/anaconda/install
 - Scrapy
 ```
@@ -48,14 +48,28 @@ https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 conda install -c anaconda pymongo
 ```
 
-
-Primeiro passo é clonar o projeto do GitHub (git clone https://github.com/Augusto94/TestePratico_Intelivix_Scraping.git)\
-Segundo é iniciar o serviço no MongoDB localmente através do comando ($ sudo service mongod start)\
-Terceiro é entrar na pasta do projeto via terminal e executar a spider "kabum" através do seguinte comando ($ scrapy crawl kabum)\
-Após isso o crawler será executado por um certo tempo (São mais de 7200 produtos a serem analisados) e as informações serão persistidas num banco de dados MongoDB chamando "products_kabum"\
-Ao terminar a execução da spider, já podem ser relizadas consultas no banco de dados. Utilizando o jupyter notebook do Anaconda segue o exemplo de uma consuta:
-- import pymongo
-- client = pymongo.MongoClient()
-- db = client.products_kabum
-- collection = db.products_kabum
-- collection.find_one({'URL': 'https://www.kabum.com.br/produto/65963/mini-mixer-a-pilha-bmm2-britania'})
+#### Executando o projeto
+1. Clone o projeto:
+```
+git clone https://github.com/Augusto94/TestePratico_Intelivix_Scraping.git
+```
+2. Inicie o serviço do MongoDB:
+```
+sudo service mongod start
+```
+3. Entre na pasta do projeto e execute o seguinte comando para rodar a Spider:
+```
+cd TestePratico\
+scrapy crawl kabum
+```
+4. Aguarde a execução do crawler (Isso pode levar um tempo ;) )
+5. Ao término da execução da spider consultas no banco de dados já podem ser relizadas. 
+6. Abra uma IDLE do python para realizar consultas (Terminal, Jupyter Notebook, ect).
+7. Segue o exemplo de uma consulta:
+```
+import pymongo
+client = pymongo.MongoClient()
+db = client.products_kabum
+collection = db.products_kabum
+collection.find_one({'URL': 'https://www.kabum.com.br/cgi-local/site/produtos/descricao_ofertas.cgi?codigo=11652'})
+```
