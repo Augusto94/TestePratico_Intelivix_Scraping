@@ -66,7 +66,7 @@ scrapy crawl kabum
 5. Ao término da execução da spider consultas no banco de dados já podem ser relizadas. 
 6. Abra uma IDLE do python para realizar consultas (Terminal, Jupyter Notebook, etc).
 7. Segue o exemplo de uma consulta:
-```
+```python
 import pymongo
 client = pymongo.MongoClient()
 db = client.products_kabum
